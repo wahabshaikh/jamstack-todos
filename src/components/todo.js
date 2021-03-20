@@ -13,6 +13,10 @@ export default function Todo({ todo, reloadTodos }) {
       .then(reloadTodos);
   };
 
+  const handleDelete = () => {
+    axios.post("/api/delete-todo", { id: todo._id }).then(reloadTodos);
+  };
+
   return (
     <>
       <label htmlFor={`todo-toggle-${todo._id}`} className="label">
@@ -27,6 +31,15 @@ export default function Todo({ todo, reloadTodos }) {
       />
 
       <p className={`text ${todo.completed && "completed"}`}>{todo.text}</p>
+
+      <label htmlFor={`todo-delete-${todo._id}`} className="label">
+        delete
+      </label>
+      <button onClick={handleDelete} className="delete">
+        <span role="img" aria-label="delete" title="delete this todo">
+          ❌
+        </span>
+      </button>
     </>
   );
 }
