@@ -7,7 +7,7 @@
   padding: 0;
 }
 
-.label {
+.form__label {
   color: #555;
   font-size: 0.75rem;
   letter-spacing: 0.1em;
@@ -16,7 +16,7 @@
   width: 350px;
 }
 
-.input,
+.form__input,
 .button {
   border-radius: 0.25rem;
   box-sizing: border-box;
@@ -25,7 +25,7 @@
   padding: 0.25rem;
 }
 
-.input {
+.form__input {
   display: block;
   border: 1px solid #333;
   padding-left: 0.5rem;

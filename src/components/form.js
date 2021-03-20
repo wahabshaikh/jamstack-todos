@@ -18,10 +18,10 @@ export default function Form({ reloadTodos }) {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
-      <label className="label">
+      <label className="form__label">
         Add a Todo
         <input
-          className="input"
+          className="form__input"
           type="text"
           value={text}
           onChange={(event) => setText(event.target.value)}

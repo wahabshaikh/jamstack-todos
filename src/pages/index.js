@@ -42,7 +42,7 @@ export default function Home() {
         <ul className="todos">
           {todos.map((todo) => (
             <li key={todo._id} className="todo">
-              <Todo todo={todo} />
+              <Todo todo={todo} reloadTodos={reloadTodos} />
             </li>
           ))}
         </ul>
