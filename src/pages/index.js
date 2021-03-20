@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Todo from "../components/todo";
 import "./index.css";
+import Form from "../components/form";
 
 export default function Home() {
   const [status, setStatus] = useState("loading");
@@ -11,6 +12,7 @@ export default function Home() {
     let cancelled = false;
 
     if (status !== "loading") return;
+
     axios("/api/get-all-todos").then((res) => {
       if (cancelled) return;
 
@@ -29,9 +31,13 @@ export default function Home() {
     };
   }, [status]);
 
+  const reloadTodos = () => setStatus("loading");
+
   return (
     <main>
       <h1 className="heading">JAMstack Todos</h1>
+      <Form reloadTodos={reloadTodos} />
+
       {todos ? (
         <ul className="todos">
           {todos.map((todo) => (
