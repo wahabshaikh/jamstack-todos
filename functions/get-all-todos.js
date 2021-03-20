@@ -12,7 +12,7 @@ const GET_ALL_TODOS = `
   }
 `;
 
-exports.handler = async function () {
+exports.handler = async () => {
   const { data, errors } = await sendQuery(GET_ALL_TODOS);
 
   if (errors) {

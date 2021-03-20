@@ -1,6 +1,28 @@
 {
+  "name": "todos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gatsby-config.js",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wahabshaikh/jamstack-todos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wahabshaikh/jamstack-todos/issues"
+  },
+  "homepage": "https://github.com/wahabshaikh/jamstack-todos#readme",
   "dependencies": {
     "axios": "^0.21.1",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "gatsby": "^3.1.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }

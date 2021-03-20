@@ -1,0 +1,33 @@
+html,
+body {
+  color: #555;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading {
+  color: #333;
+  text-align: center;
+}
+
+.todos {
+  list-style: none;
+  border-top: 1px solid #ddd;
+  margin: 2rem auto;
+  padding: 0;
+  max-width: 500px;
+}
+
+.todo {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+.loading {
+  text-align: center;
+}
